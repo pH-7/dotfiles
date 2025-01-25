@@ -1,0 +1,97 @@
+[user]
+    name = Pierre-Henry Soria
+    email = $EMAIL_ADDRESS
+
+[init]
+    defaultBranch = main
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+    ui = true
+
+[alias]
+    a = add
+    ap = add -p
+    st = status
+    ph = push
+    pl = pull
+    ci = commit
+    ct = commit
+    ch = checkout
+    co = checkout
+    br = branch
+    cm = commit -m
+    ca = commit --amend
+    lg = log --pretty=format:'%h %an %Cred%ar %Cgreen%s'
+    cob = checkout -b
+    bra =  branch -a
+    cl = clone
+    cam = commit -am
+    last = log -1 HEAD
+    staged = diff --cached
+    unstage = reset HEAD
+    unstaged = diff
+    uncommit = reset --soft HEAD^
+    type = cat-file -t
+    dump = cat-file -p
+    head = !git l -1
+    track = checkout -t
+    amend = commit --amend --no-edit
+    sh = show
+    sf = show --stat --oneline
+    showfiles = show --stat --oneline
+
+[apply]
+    whitespace = warn
+
+
+[diff]
+    color = auto
+    rename = copy
+
+[pager]
+    color = true
+
+[push]
+    default = current
+
+[pull]
+    rebase = false
+
+[help]
+  autocorrect = 1
+
+[status]
+    color = auto
+    submodule = 1
+
+[difftool]
+    prompt = false
+
+[credential]
+    helper = cache --timeout=3600
+
+[core]
+    filemode = false
+    autocrlf = input
+    safecrlf = true
+    whitespace = cr-at-eol
+    editor = nano
+
+[filter "lfs"]
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+
+[merge]
+    tool = vscode
+
+[mergetool "vscode"]
+    cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+
+[mergetool]
+    keepBackup = false
