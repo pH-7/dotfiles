@@ -45,7 +45,7 @@
     sf = show --stat --oneline
     showfiles = show --stat --oneline
     last = log -n1 # display last commit
-    undo = clean -f -d
+    undo = clean -f -d # removes untracked files and directories from git repository
 
 [apply]
     whitespace = warn
