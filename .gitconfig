@@ -44,6 +44,8 @@
     sh = show
     sf = show --stat --oneline
     showfiles = show --stat --oneline
+    last = log -n1 # display last commit
+    undo = clean -f -d
 
 [apply]
     whitespace = warn
