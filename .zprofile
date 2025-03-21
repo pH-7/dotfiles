@@ -12,4 +12,4 @@ alias gt="git status"
 
 alias up="docker-compose up"
 alias down="docker-compose down"
-alias dprod="docker-compose -f docker-compose.production.yml up"
+
