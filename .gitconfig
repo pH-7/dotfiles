@@ -26,6 +26,7 @@
     cm = commit -m
     ca = commit --amend
     ds = diff --staged
+    l = log
     lg = log --pretty=format:'%h %an %Cred%ar %Cgreen%s'
     cob = checkout -b
     bra =  branch -a
