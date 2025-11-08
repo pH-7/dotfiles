@@ -2,4 +2,4 @@ font-family = "Fira Code, monospace"
 #font-size   = 14
 scrollback-limit = 10000000
 copy-on-select = clipboard
-#theme = “Solarized Dark”
+#theme = dracula # https://github.com/dracula/ghostty#install
